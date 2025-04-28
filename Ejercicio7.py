@@ -31,10 +31,10 @@ try:
             print("Error: No se pudo capturar la imagen.")
             break
 
-        # Reducir tamaño para procesamiento más rápido
+    
         frame = cv2.resize(frame, (320, 240))
 
-        # Convertir la imagen a HSV (mejor para detectar colores)
+        # Convertir la imagen a HSV 
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
         # Definir rangos de colores en HSV
